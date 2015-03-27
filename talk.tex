@@ -1,0 +1,520 @@
+\documentclass[ignorenonframetext,]{beamer}
+\usetheme{CambridgeUS}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{:}
+\setbeamercolor{caption name}{fg=normal text.fg}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{lmodern}
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+    \newcommand{\euro}{€}
+  \else
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+      \fi
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight0.8\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+%   \AtBeginPart{
+%     \let\insertpartnumber\relax
+%     \let\partname\relax
+%     \frame{\partpage}
+%   }
+%   \AtBeginSection{
+%     \let\insertsectionnumber\relax
+%     \let\sectionname\relax
+%     \frame{\sectionpage}
+%   }
+%   \AtBeginSubsection{
+%     \let\insertsubsectionnumber\relax
+%     \let\subsectionname\relax
+%     \frame{\subsectionpage}
+%   }
+%   
+%   \setlength{\parindent}{0pt}
+%   \setlength{\parskip}{6pt plus 2pt minus 1pt}
+%   \setlength{\emergencystretch}{3em}  % prevent overfull lines
+%   \setcounter{secnumdepth}{0}
+%   
+%   \date{}
+
+\title{The question of reproducibility in brain imaging}
+\author[JB Poline]{Jean-Baptiste Poline \\ \texttt{jbpoline@berkeley.edu}}
+\date{April 1, 2015}
+\institute[UC Berkeley]{Henry Wheeler Brain Imaging Center, \\Helen Wills Neuroscience Institute, UC Berkeley, CA}
+
+\begin{document}
+
+\frame{\titlepage }
+
+
+\begin{frame}{The question of reproducibility in brain imaging}
+
+\begin{block}{Jean-Baptiste Poline}
+
+Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Outline}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Evidence for a crisis in reproducibility\\
+\item
+  What about brain imaging ?
+\item
+  Causes\\
+\item
+  Impact
+\item
+  What shall we do about it
+\end{itemize}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Mesh terms ``reproducibility of results'' (100 in 2010)
+  \includegraphics{./img/mesh_term_reproducibility_results.pdf}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Science finding Reproducibility crisis evidence}
+
+\begin{block}{Preclinical oncology}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Begley C.G. \& Ellis L. Nature, (2012): ``Only 6 out of 53 key
+  findings in pre-clinical oncology could be fully replicated''
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Epidemiology}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Reproducible Epidemiologic Research, Peng et al, 2006.
+\item
+  ``High FP/FN Ratio in Epidemiologic Studies'', Ioannidis, 2011.
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Genetics}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Ionannidis 2007: 16 SNPs hypothesized, check on 12-32k cancer/control:
+  ``\ldots{} results are largely null.''
+\item
+  The failing concept of endophenotype (Iacono, Psychophysiology, 2014)
+\item
+  Many references and warnings: eg:``Drinking from the fire hose
+  \ldots{}'' by Hunter and Kraft, 2007.
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{block}{In social sciences, psychology, cognitive neuroscience}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Reproducibility Project in Psychology (Open Science Framework)
+\item
+  Simonshon et al. ``P-curve'', ``Evaluating Replication Results'' 2014,
+  2013.
+\item
+  Special Issue on ``Reliability and Replication in Cognitive and
+  Affective Neuroscience Research.'' Barch, Deanna, and Yarkoni, Cogn
+  Affect Behav Neurosci, 2013.
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Neuroscience}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Button et al., Nature Neuroscience, 2013
+\end{itemize}
+
+\end{block}
+
+\begin{block}{In general: Editorials in high profile journals}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Nature, ``Reducing our irreproducibility'', 2013.
+
+  \begin{itemize}[<+->]
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    New mechanism for independently replicating needed
+  \item
+    Easy to misinterpret artefacts as biologically important
+  \item
+    Too many sloppy mistakes
+  \end{itemize}
+\item
+  NIH plans to enhance reproducibility. Collins and Tabak, Nature, 2014.
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{What about brain imaging ? Some - \emph{but few} - facts}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Publication does not allow replication or to find methodological
+  issues (J. Carp Cogn Affect Behav Neurosci, 2013):
+\end{itemize}
+
+``For example, while Brown and Braver (2005) claimed that activation in
+the anterior cingulate cortex (ACC) is sensitive to the likelihood of
+committing an error, Nieuwenhuis, Tanja, Mars, Botvinick, and Hajcak
+(2007) reported no relationship between ACC activation and error
+likelihood.''
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  When attempted, replication is poor:
+
+  \begin{itemize}[<+->]
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Boekel, W., et al. (Cortex 2013) : replication study of structural
+    brain-behavior correlations.
+  \item
+    5 studies, 17 findings: Bayesian analysis favored null hypothesis
+  \item
+    But: only 36 subjects, while most original studies were better
+    powered
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Autism example: Toro et al., Corpus callosum size example. S.
+  Bookheimer's examples (cereb. size, FFA, FC).
+\end{itemize}
+
+\note{\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Analysis of large databases showing low concordance of small sample
+  group analysis (Thirion et al., 2007)
+\end{itemize}
+
+R Toro: We conducted a meta-analysis of the literature which suggested a
+statistically significant difference. However, the studies included were
+heavily underpowered: on average only 20\% power to detect differences
+of 0.3 standard deviations, which makes it difficult to establish the
+reality of such a difference. We therefore studied the size of the
+corpus callosum among 694 subjects (328 patients, 366 controls) from the
+Abide cohort. Despite having achieved 99\% power to detect statistically
+significant differences of 0.3 standard deviations, we did not observe
+any.}
+
+\end{frame}
+
+\begin{frame}{Causes and Impact}
+
+\begin{block}{Statistical}
+
+\end{block}
+
+\begin{block}{Computational}
+
+\end{block}
+
+\begin{block}{Social}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{block}{Statistical causes:(1)}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Lack of understanding of statistical issues and power computation
+\item
+  The usual issues:
+
+  \begin{itemize}[<+->]
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    low power studies (Button et al, 2013)
+  \item
+    P-hacking: Simmons et al. 2011, Simmonshon et al., 2014
+  \end{itemize}
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Example}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  From imaging genetics (BDNF - Hippocampus volume):
+\item
+  \includegraphics{./img/molendijk_2012_f4.pdf}
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{block}{Statistical causes:(2)}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  P value evil: will we eventually turn to Bayesian evidence? How ?
+\item
+  No good understanding of the necessity to report null results
+  -\textgreater{} File drawer problem (Rosenthal, 1979)\\
+\item
+  Emmergence of complex H0/H1, A. Afraz, 2014.
+\end{itemize}
+
+\end{block}
+
+\begin{block}{And if we stick to p-values:}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Which one to pick: Revised standard for statistical evidence (PNAS
+  Johnson 2013) : 0.05 \textless{}=\textgreater{} BF\(\in{[3,5]}\)
+\item
+  \includegraphics{./img/Johnson_significance.pdf}
+\end{itemize}
+
+\note{\begin{verbatim}
+For instance, H1 “neurons in brain area X encode visual memories” can be
+contrasted against H0 “neurons in brain area X does not encode visual
+memories”. Even if H1 is not true, if only positive results get published,
+after a few years there will be plenty of published papers showing that
+neurons in brain area X encode visual memories. Then, some scientists might
+hypothesize a more complex H1: “neurons in area X encode visual memories by
+synchronization of their electrical activity”, now the null hypothesis
+would be “neurons in area X encode visual memories without synchronization
+of their activity”.  In this new null hypothesis, involvement of area X
+neurons in memory encoding is already assumed. This second null hypothesis
+can be falsely rejected again in contrast to an even more complex
+scientific model, creating an even more complex set of default beliefs and
+null hypotheses. 
+\end{verbatim}
+}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{block}{Computational causes:}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Biologists and MDs are rarely well trained in computation - but most
+  brain imaging findings rely heavily on computations
+\item
+  Claerbout's ``''``An article about computational science in a
+  scientific publication is not the scholarship itself, it is merely
+  advertising of the scholarship. The actual scholarship is the complete
+  software development environment and the complete set of instructions
+  which generated the figures.''``''"
+\item
+  Meta data capture and curation not implemented (parameters and process
+  of data generation), no standards for meta data
+\item
+  Computational environment packaging not used (Neurodebian VM, Docker,
+  \ldots{})
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{block}{Social/systemic causes}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Publication based reward system (career, grants, fame, etc) + hyper
+  competitive environment is in general not working towards good
+  science:
+
+  \begin{itemize}[<+->]
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    favors speed over careful, \textbf{re-usable}, reproduced studies
+  \item
+    favors high risk and rapid publications
+  \item
+    impeeds data and code sharing even for publicly funded research
+  \end{itemize}
+\item
+  Positive finding publication bias and the file drawer problem
+
+  \begin{itemize}[<+->]
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    how this can delay scientific revolution (A. Afraz, `We could all be
+    astronomers')
+  \item
+    is science always self-correcting ?
+  \end{itemize}
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{block}{Impact}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Large amount of resource wasted (talent, money, time)
+\item
+  Discredit from the public and governments
+\item
+  Slows down scientific and medical progress
+\item
+  Impact on the type of work that can be started (counter example: UK
+  biobank, Bavarian cohorts).
+\item
+  The system may select the most ``productive'' scientists - not
+  necessarily the best
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Conclusion: What shall we do about it}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Adopt more stringent and better statistical and computational
+  standards
+\item
+  Adopt genetic research standards for replication
+\item
+  Adopt clinical trial standards and pre-registration
+\item
+  Augment the awareness of these issues, adopt data and code sharing as
+  the standard in our field
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Conclusion: What shall we do about it}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Train the new generation of scientist in computation, statistics
+\item
+  NIH answers:
+
+  \begin{itemize}[<+->]
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Data Discovery Index, checklists
+  \item
+    online forum for open discussions,
+  \item
+    change in funding and bio, anonymize peer review, etc.
+  \end{itemize}
+\item
+  Work with journals and editors to accept well powered null findings
+\item
+  OSF, many lab and community based projects, METRICS (Meta-Research)
+  institutes
+\item
+  Reward people who produce re-usable science
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Acknowledgement}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  At Berkeley: M. Brett, J. Millman, F. Perez; Simpace interest group:
+  D. Sheltraw, C. Gallen, A. Tambini, K. K. Hwang; B. Inglis, M.
+  D'Esposito.
+\item
+  At INCF: Mathew Abrams, Linda Layon, Roman Valls
+\item
+  Nidash: David Kennedy, Satra Ghosh, Chris Gorgowleski, Nolan Nichols,
+  Dave Keator, Camille Maumet, Guillaume Flandin, Tom Nichols, Russ
+  Poldrack, etc
+\item
+  At Pasteur, Neurospin, MNI.
+\end{itemize}
+
+\end{frame}
+
+%---- 
+\end{document}
