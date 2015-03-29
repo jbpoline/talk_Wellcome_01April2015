@@ -1,61 +1,57 @@
 ## Outline
 >     
 > * Why I came to work on reproducibility issues
-> * Agreeing on the scale of the problem  
-> * Understanding why the situation is blocked 
+> * Agreeing on the scale of the problem and why the situation is locked 
 > * What can {researchers,editors,funding agencies} do?
 > * Conclusion: how to we change a culture. 
 
 # Part I: Introduction
 
 ## Why I came to work on this
->
-> * Applied maths, software, some success with some early works
-> * 12 years Some method development and managed research projects in a big neuroimaging lab, large imaging genetics databasing
-> * Slowly realized that many of us were playing the publication game, but research done was poorly reproducible and inefficient 
-> * Invested some times in neuroinformatics, resigned from tenure job, took a job Berkeley where reproducibility was considered an important axis. 
 
-## The scale of the problem in Brain imaging
+> * Engineering background, applied mathematics to biology
+> * Method development for brain imaging, managed research projects, large imaging genetics databasing. Constant interactions with cognitive neuroscience and clinical research.
+> * Realized research done was poorly reproducible, inefficient and mistakes were ubiquitous 
+> * Many of us were playing the publication game
+> * Invested some times in neuroinformatics, resigned from tenure job, took a job at Berkeley where reproducibility was considered an important axis. 
 
-> * "Would the finding for which this paper is published be replicated on another dataset" 
+## The scale of the problem in Brain Imaging and what is the current culture
+
+> * NIH is investing about 400M$ each year in neuroimaging studies.
+> * Q: "Would the finding for which this paper is published be replicated on another dataset?" 
 > * Difficult to assess, only a few relevant papers, tend to show little replication.
 > * 20 years of experience with researchers using neuroimaging as a tool:
-    - Phds / postdoc / tenured researchers need papers, 
-    - p-hacking + double dipping + pressure for grants
-    - optimizing research assessments (authorship and the "XXXX" example)
-> * NIH investing about 400M$ each year in neuroimaging studies
+    - Phds / postdoc / tenured researchers need papers, and grants
+    - "data squeezing", p-hacking, double dipping 
     - Percentage of solid and replicable studies in brain mapping : [0-25%]. 
-    - Percentage of re-usable data / analyses? Less than a few percent if not funded specifically for this. 
+> * Percentage of re-usable data & analyses? Less than a few percents if not funded specifically for sharing. 
 
-## Why is the current situation very difficult to change?
+## Why is the current culture very difficult to change?
 
-> * Researchers need/want jobs, they will optimize *any* criteria that will gave them a job and the recognition of their peers
+> * Researchers need/want jobs, they optimize their behaviour to get jobs 
 > * Universities need money and they will optimize criteria to get grants 
-> * Publishing companies are commercial enterprise 
-> * Conclusion: publication is the widely accepted and mostly only currency in research
-    - Greediness ? 
-    - research has become a competitive game 
-    - the culture and practices has in fact become detremental to research (secrecy, sloppiness)
+> * Conclusion: optimize publication, the widely accepted currency in research
+    - research has become a competitive game : be the quickest, collaborate only if you need
+    - keep "your" data for yourself, or trade it for authorship 
+    - the situation is fostering secrecy and sloppiness, no time to train yourself properly
+> * Administrations loves quantitative criteria: numbers are easier to manage
+> * A great deal of cynicism / desabusement in some communities
+
+# Part II: Who can do what? 
 
 ## Incentives and Punish by reward
 
-> * Most of us think we need to change the incentives (publication), or punish bad behaviour
-> * ![Punish by reward](./img/punish_by_reward_80.jpg)
-> * carrots and sticks seem to work very well for dogs. Do they for researchers?
-
-##  "Effective" approaches: research management laziness
-
-> * Administration loves quantitative criteria: numbers are easier to manage
-> * recruiting committees: how can we make papers less important ?
-> * reviewers : how do I review the code ? How do I see what has been done before?
-
-# Part II: Who can do what? 
+> * Most of us think we need to change the incentives, or "punish" bad behaviour
+> * <div style="float:center" markdown="1">
+  ![Punish by reward](./img/punish_by_reward_50pc.jpg)
+    </div>
 
 ## Do not change the incentives
 
 > * Because these new incentives will be optimized and abused.
 > * Because working for specific incentives is likely to be detrimental to the work
 > * Because evaluation cannot be reduced to a set of numbers: it takes time and competences. 
+> * carrots and sticks seem to work very well for some pets, but do they for researchers?
 
 <!-- begin_notes
 <div>
@@ -63,30 +59,40 @@ something big here
 </div>
 end_notes -->
 
-## It is mostly the funding agencies' call
+## It is mostly the funding agencies' 
 
 > * other "stakeholders" are stuck in local minima, or need to feed their kids
-> * code and data should be release and reviewed
-> * practical steps: 
-      - grant review guidelines have a new section: (significance, feasability, ... *replicability+re-usability*, evaluation of the applicants will include ways previous research can be re-used)
-> * the ethical aspects: the rational for sharing is also ethical !
+> * they are the ones with the less constraints 
+> * consider all ethical aspects in clinical research: strong rational for sharing 
+> * consider how much is re-used of what has been funded : make research less costly
+> * consider funding infrastructures for sharing data, train 
+
+## practical steps: 
+> * grant review guidelines have a new section: significance, feasability, ... *replicability+re-usability*, 
+> * evaluation of the applicants will include ways previous research can be re-used
+> * code and data are released with appropriate license and reviewed as deliverable (data paper?)
 
 ## Universities's call: Training on statistical and computational methods
 
-> * Open science
-> * programming  ("data science")
-> * statistics ("data science")
+> * train on open and collaborative science
+> * train life science scientists in depth programming skills  ("data science")
+> * train life science scientists in depth in statistics ("data science")
 
-## Researcher's call: The Manifesto / Hippocratic oaths
+## Researcher's call: The research manifesto / Hippocratic oaths
 
-> * the transparency principle
-> * the global versus local optimization
+> * I will make my research tools re-usable by others 
+> * I will strive to collaborate in the areas where I cannot do the best work
+> * I will be as transparent as possible
+> * I will take the time to train myself in key areas 
+> * I will consider first the actions benefitting the progress of knowledge 
 
-## On the statistical side of things 
+## On the statistical / computational side of things 
 
-> * the damaging effect of p-values (XXX journal ban on p-values)
-> * Effect sizes and power : journals' call
+> * The damaging effect of p-values (see psychology journal ban on p-values)
+> * Effect sizes and power: journals' call
 > * Publish models and model comparisons
+> * Replication with open data
+> * Code review and testing ("un-tested code is broken code") 
 
 # Part III: Conclusion 
 
@@ -112,9 +118,9 @@ end_notes -->
 
 * K. Button et al., Nature Neuroscience, 2013
 * Nature, "Reducing our irreproducibility", 2013.
-  - New mechanism for independently replicating needed 
-  - Easy to misinterpret artefacts as biologically important
-  - Too many sloppy mistakes
+    - New mechanism for independently replicating needed 
+    - Easy to misinterpret artefacts as biologically important
+    - Too many sloppy mistakes
 * NIH plans to enhance reproducibility. Collins and Tabak, Nature, 2014.
 * Boekel, W., et al. (Cortex 2013) : replication study of structural brain-behavior correlations.
 * J. Carp Cogn Affect Behav Neurosci, 2013
@@ -123,6 +129,11 @@ end_notes -->
 
 
 <!-- begin_comment 
+
+##  "Effective" approaches: research management laziness
+
+> * recruiting committees: how can we make papers less important ?
+> * reviewers : how do I review the code ? How do I see what has been done before?
 
 ## What about brain imaging ? Some - _but few_ - facts
 
