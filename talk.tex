@@ -60,7 +60,7 @@
 %   
 %   \date{}
 
-\title{The question of reproducibility in brain imaging}
+\title[Reproducibility in Brain Imaging]{The question of reproducibility in brain imaging}
 \author[JB Poline]{Jean-Baptiste Poline \\ \texttt{jbpoline@berkeley.edu}}
 \date{April 1, 2015}
 \institute[UC Berkeley]{Henry Wheeler Brain Imaging Center, \\Helen Wills Neuroscience Institute, UC Berkeley, CA}
@@ -70,402 +70,245 @@
 \frame{\titlepage }
 
 
-\begin{frame}{The question of reproducibility in brain imaging}
-
-\begin{block}{Jean-Baptiste Poline}
-
-Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
-
-\end{block}
-
-\end{frame}
-
 \begin{frame}{Outline}
 
 \begin{itemize}[<+->]
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  Evidence for a crisis in reproducibility\\
+  Why I came to work on reproducibility issues
 \item
-  What about brain imaging ?
+  Agreeing on the scale of the problem and why the situation is locked
 \item
-  Causes\\
+  What can \{researchers,editors,funding agencies\} do?
 \item
-  Impact
-\item
-  What shall we do about it
-\end{itemize}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Mesh terms ``reproducibility of results'' (100 in 2010)
-  \includegraphics{./img/mesh_term_reproducibility_results.pdf}
+  Conclusion: how to we change a culture.
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Science finding Reproducibility crisis evidence}
+\section{Part I: Introduction}\label{part-i-introduction}
 
-\begin{block}{Preclinical oncology}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Begley C.G. \& Ellis L. Nature, (2012): ``Only 6 out of 53 key
-  findings in pre-clinical oncology could be fully replicated''
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Epidemiology}
+\begin{frame}{Why I came to work on this}
 
 \begin{itemize}[<+->]
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  Reproducible Epidemiologic Research, Peng et al, 2006.
+  Engineering background, applied mathematics to biology
 \item
-  ``High FP/FN Ratio in Epidemiologic Studies'', Ioannidis, 2011.
+  Method development for brain imaging, managed research projects, large
+  imaging genetics databasing. Constant interactions with cognitive
+  neuroscience and clinical research.
+\item
+  Realized research done was poorly reproducible, inefficient and
+  mistakes were ubiquitous
+\item
+  Many of us were playing the publication game
+\item
+  Invested some times in neuroinformatics, resigned from tenure job,
+  took a job at Berkeley where reproducibility was considered an
+  important axis.
 \end{itemize}
-
-\end{block}
-
-\begin{block}{Genetics}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Ionannidis 2007: 16 SNPs hypothesized, check on 12-32k cancer/control:
-  ``\ldots{} results are largely null.''
-\item
-  The failing concept of endophenotype (Iacono, Psychophysiology, 2014)
-\item
-  Many references and warnings: eg:``Drinking from the fire hose
-  \ldots{}'' by Hunter and Kraft, 2007.
-\end{itemize}
-
-\end{block}
 
 \end{frame}
 
-\begin{frame}
-
-\begin{block}{In social sciences, psychology, cognitive neuroscience}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Reproducibility Project in Psychology (Open Science Framework)
-\item
-  Simonshon et al. ``P-curve'', ``Evaluating Replication Results'' 2014,
-  2013.
-\item
-  Special Issue on ``Reliability and Replication in Cognitive and
-  Affective Neuroscience Research.'' Barch, Deanna, and Yarkoni, Cogn
-  Affect Behav Neurosci, 2013.
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Neuroscience}
+\begin{frame}{The scale of the problem in Brain Imaging and what is the
+current culture}
 
 \begin{itemize}[<+->]
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  Button et al., Nature Neuroscience, 2013
-\end{itemize}
-
-\end{block}
-
-\begin{block}{In general: Editorials in high profile journals}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+  NIH is investing about 400M\$ each year in neuroimaging studies.
 \item
-  Nature, ``Reducing our irreproducibility'', 2013.
+  Q: ``Would the finding for which this paper is published be replicated
+  on another dataset?''
+\item
+  Difficult to assess, only a few relevant papers, tend to show little
+  replication.
+\item
+  20 years of experience with researchers using neuroimaging as a tool:
 
   \begin{itemize}[<+->]
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    New mechanism for independently replicating needed
+    Phds / postdoc / tenured researchers need papers, and grants
   \item
-    Easy to misinterpret artefacts as biologically important
+    ``data squeezing'', p-hacking, double dipping
   \item
-    Too many sloppy mistakes
+    Percentage of solid and replicable studies in brain mapping :
+    {[}0-25\%{]}.
   \end{itemize}
 \item
-  NIH plans to enhance reproducibility. Collins and Tabak, Nature, 2014.
+  Percentage of re-usable data \& analyses? Less than a few percents if
+  not funded specifically for sharing.
 \end{itemize}
-
-\end{block}
 
 \end{frame}
 
-\begin{frame}{What about brain imaging ? Some - \emph{but few} - facts}
+\begin{frame}{Why is the current culture very difficult to change?}
 
 \begin{itemize}[<+->]
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  Publication does not allow replication or to find methodological
-  issues (J. Carp Cogn Affect Behav Neurosci, 2013):
-\end{itemize}
-
-``For example, while Brown and Braver (2005) claimed that activation in
-the anterior cingulate cortex (ACC) is sensitive to the likelihood of
-committing an error, Nieuwenhuis, Tanja, Mars, Botvinick, and Hajcak
-(2007) reported no relationship between ACC activation and error
-likelihood.''
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
+  Researchers need/want jobs, they optimize their behaviour to get jobs
 \item
-  When attempted, replication is poor:
+  Universities need money and they will optimize criteria to get grants
+\item
+  Conclusion: optimize publication, the widely accepted currency in
+  research
 
   \begin{itemize}[<+->]
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    Boekel, W., et al. (Cortex 2013) : replication study of structural
-    brain-behavior correlations.
+    research has become a competitive game : be the quickest,
+    collaborate only if you need
   \item
-    5 studies, 17 findings: Bayesian analysis favored null hypothesis
+    keep ``your'' data for yourself, or trade it for authorship
   \item
-    But: only 36 subjects, while most original studies were better
-    powered
-  \end{itemize}
-\end{itemize}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Autism example: Toro et al., Corpus callosum size example. S.
-  Bookheimer's examples (cereb. size, FFA, FC).
-\end{itemize}
-
-\note{\begin{itemize}
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Analysis of large databases showing low concordance of small sample
-  group analysis (Thirion et al., 2007)
-\end{itemize}
-
-R Toro: We conducted a meta-analysis of the literature which suggested a
-statistically significant difference. However, the studies included were
-heavily underpowered: on average only 20\% power to detect differences
-of 0.3 standard deviations, which makes it difficult to establish the
-reality of such a difference. We therefore studied the size of the
-corpus callosum among 694 subjects (328 patients, 366 controls) from the
-Abide cohort. Despite having achieved 99\% power to detect statistically
-significant differences of 0.3 standard deviations, we did not observe
-any.}
-
-\end{frame}
-
-\begin{frame}{Causes and Impact}
-
-\begin{block}{Statistical}
-
-\end{block}
-
-\begin{block}{Computational}
-
-\end{block}
-
-\begin{block}{Social}
-
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-
-\begin{block}{Statistical causes:(1)}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Lack of understanding of statistical issues and power computation
-\item
-  The usual issues:
-
-  \begin{itemize}[<+->]
-  \itemsep1pt\parskip0pt\parsep0pt
-  \item
-    low power studies (Button et al, 2013)
-  \item
-    P-hacking: Simmons et al. 2011, Simmonshon et al., 2014
-  \end{itemize}
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Example}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  From imaging genetics (BDNF - Hippocampus volume):
-\item
-  \includegraphics{./img/molendijk_2012_f4.pdf}
-\end{itemize}
-
-\end{block}
-
-\end{frame}
-
-\begin{frame}[fragile]
-
-\begin{block}{Statistical causes:(2)}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  P value evil: will we eventually turn to Bayesian evidence? How ?
-\item
-  No good understanding of the necessity to report null results
-  -\textgreater{} File drawer problem (Rosenthal, 1979)\\
-\item
-  Emmergence of complex H0/H1, A. Afraz, 2014.
-\end{itemize}
-
-\end{block}
-
-\begin{block}{And if we stick to p-values:}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Which one to pick: Revised standard for statistical evidence (PNAS
-  Johnson 2013) : 0.05 \textless{}=\textgreater{} BF\(\in{[3,5]}\)
-\item
-  \includegraphics{./img/Johnson_significance.pdf}
-\end{itemize}
-
-\note{\begin{verbatim}
-For instance, H1 “neurons in brain area X encode visual memories” can be
-contrasted against H0 “neurons in brain area X does not encode visual
-memories”. Even if H1 is not true, if only positive results get published,
-after a few years there will be plenty of published papers showing that
-neurons in brain area X encode visual memories. Then, some scientists might
-hypothesize a more complex H1: “neurons in area X encode visual memories by
-synchronization of their electrical activity”, now the null hypothesis
-would be “neurons in area X encode visual memories without synchronization
-of their activity”.  In this new null hypothesis, involvement of area X
-neurons in memory encoding is already assumed. This second null hypothesis
-can be falsely rejected again in contrast to an even more complex
-scientific model, creating an even more complex set of default beliefs and
-null hypotheses. 
-\end{verbatim}
-}
-
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-
-\begin{block}{Computational causes:}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Biologists and MDs are rarely well trained in computation - but most
-  brain imaging findings rely heavily on computations
-\item
-  Claerbout's ``''``An article about computational science in a
-  scientific publication is not the scholarship itself, it is merely
-  advertising of the scholarship. The actual scholarship is the complete
-  software development environment and the complete set of instructions
-  which generated the figures.''``''"
-\item
-  Meta data capture and curation not implemented (parameters and process
-  of data generation), no standards for meta data
-\item
-  Computational environment packaging not used (Neurodebian VM, Docker,
-  \ldots{})
-\end{itemize}
-
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-
-\begin{block}{Social/systemic causes}
-
-\begin{itemize}[<+->]
-\itemsep1pt\parskip0pt\parsep0pt
-\item
-  Publication based reward system (career, grants, fame, etc) + hyper
-  competitive environment is in general not working towards good
-  science:
-
-  \begin{itemize}[<+->]
-  \itemsep1pt\parskip0pt\parsep0pt
-  \item
-    favors speed over careful, \textbf{re-usable}, reproduced studies
-  \item
-    favors high risk and rapid publications
-  \item
-    impeeds data and code sharing even for publicly funded research
+    the situation is fostering secrecy and sloppiness, no time to train
+    yourself properly
   \end{itemize}
 \item
-  Positive finding publication bias and the file drawer problem
-
-  \begin{itemize}[<+->]
-  \itemsep1pt\parskip0pt\parsep0pt
-  \item
-    how this can delay scientific revolution (A. Afraz, `We could all be
-    astronomers')
-  \item
-    is science always self-correcting ?
-  \end{itemize}
+  Administrations loves quantitative criteria: numbers are easier to
+  manage
+\item
+  A great deal of cynicism / desabusement in some communities
 \end{itemize}
-
-\end{block}
 
 \end{frame}
 
-\begin{frame}
+\section{Part II: Who can do what?}\label{part-ii-who-can-do-what}
 
-\begin{block}{Impact}
+\begin{frame}{Incentives and Punish by reward}
+
+\begin{itemize}[<+->]
+\item
+  Most of us think we need to change the incentives, or ``punish'' bad
+  behaviour
+\item
+  \begin{figure}[htbp]
+  \centering
+  \includegraphics{./img/punish_by_reward_50pc.jpg}
+  \caption{Punish by reward}
+  \end{figure}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Do not change the incentives}
 
 \begin{itemize}[<+->]
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  Large amount of resource wasted (talent, money, time)
+  Because these new incentives will be optimized and abused.
 \item
-  Discredit from the public and governments
+  Because working for specific incentives is likely to be detrimental to
+  the work
 \item
-  Slows down scientific and medical progress
+  Because evaluation cannot be reduced to a set of numbers: it takes
+  time and competences.
 \item
-  Impact on the type of work that can be started (counter example: UK
-  biobank, Bavarian cohorts).
-\item
-  The system may select the most ``productive'' scientists - not
-  necessarily the best
+  carrots and sticks seem to work very well for some pets, but do they
+  for researchers?
 \end{itemize}
-
-\end{block}
 
 \end{frame}
 
-\begin{frame}{Conclusion: What shall we do about it}
+\begin{frame}{It is mostly the funding agencies'}
 
 \begin{itemize}[<+->]
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  Adopt more stringent and better statistical and computational
-  standards
+  other ``stakeholders'' are stuck in local minima, or need to feed
+  their kids
 \item
-  Adopt genetic research standards for replication
+  they are the ones with the less constraints
 \item
-  Adopt clinical trial standards and pre-registration
+  consider all ethical aspects in clinical research: strong rational for
+  sharing
 \item
-  Augment the awareness of these issues, adopt data and code sharing as
-  the standard in our field
+  consider how much is re-used of what has been funded : make research
+  less costly
+\item
+  consider funding infrastructures for sharing data, train
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}{practical steps:}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  grant review guidelines have a new section: significance, feasability,
+  \ldots{} \emph{replicability+re-usability},
+\item
+  evaluation of the applicants will include ways previous research can
+  be re-used
+\item
+  code and data are released with appropriate license and reviewed as
+  deliverable (data paper?)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Universities's call: Training on statistical and
+computational methods}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  train on open and collaborative science
+\item
+  train life science scientists in depth programming skills (``data
+  science'')
+\item
+  train life science scientists in depth in statistics (``data
+  science'')
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Researcher's call: The research manifesto / Hippocratic
+oaths}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  I will make my research tools re-usable by others
+\item
+  I will strive to collaborate in the areas where I cannot do the best
+  work
+\item
+  I will be as transparent as possible
+\item
+  I will take the time to train myself in key areas
+\item
+  I will consider first the actions benefitting the progress of
+  knowledge
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{On the statistical / computational side of things}
+
+\begin{itemize}[<+->]
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  The damaging effect of p-values (see psychology journal ban on
+  p-values)
+\item
+  Effect sizes and power: journals' call
+\item
+  Publish models and model comparisons
+\item
+  Replication with open data
+\item
+  Code review and testing (``un-tested code is broken code'')
+\end{itemize}
+
+\end{frame}
+
+\section{Part III: Conclusion}\label{part-iii-conclusion}
 
 \begin{frame}{Conclusion: What shall we do about it}
 
@@ -509,9 +352,45 @@ null hypotheses.
 \item
   Nidash: David Kennedy, Satra Ghosh, Chris Gorgowleski, Nolan Nichols,
   Dave Keator, Camille Maumet, Guillaume Flandin, Tom Nichols, Russ
-  Poldrack, etc
+  Poldrack, and others
 \item
-  At Pasteur, Neurospin, MNI.
+  At Pasteur: Roberto Toro; At Neurospin: B. Thirion; at the MNI: PJT
+  and colleagues
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{References}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  K. Button et al., Nature Neuroscience, 2013
+\item
+  Nature, ``Reducing our irreproducibility'', 2013.
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    New mechanism for independently replicating needed
+  \item
+    Easy to misinterpret artefacts as biologically important
+  \item
+    Too many sloppy mistakes
+  \end{itemize}
+\item
+  NIH plans to enhance reproducibility. Collins and Tabak, Nature, 2014.
+\item
+  Boekel, W., et al. (Cortex 2013) : replication study of structural
+  brain-behavior correlations.
+\item
+  J. Carp Cogn Affect Behav Neurosci, 2013
+\item
+  Poldrack, R.A., and Poline, J.-B. (2014). {[}\ldots{}{]}
+  reproducibility challenges of shared data. TICS.
+\item
+  Griffiths, T.L. (2015). Manifesto for a new (computational) cognitive
+  revolution. Cognition 135, 21--23.
 \end{itemize}
 
 \end{frame}
