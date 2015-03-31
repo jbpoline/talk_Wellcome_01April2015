@@ -1,24 +1,24 @@
 ## Outline
      
 > * Why I came to work on reproducibility issues
-> * Agreeing on the scale of the problem and why the situation is locked 
-> * _What can {researchers,editors,funding agencies} do?_
+> * Agreeing on the scale of the problem and why the situation is blocked 
+> * __What can we: {researchers, editors, funding agencies, universities} do?__
 > * Conclusion: how to we change our research culture. 
 
 # Part I: Introduction
 
 ## Why I came to work on reproducibility 
 
-> * Engineering background, applied mathematics to biology
+> * Engineering applied mathematics to biology background.
 > * Method development for brain imaging, managed research projects, large imaging genetics databasing. _Constant interactions with cognitive neuroscience and clinical research._
-> * Realized research done was poorly reproducible, inefficient, and mistakes ubiquitous 
-> * Many of us were playing the publication game
-> * Invested some times in neuroinformatics and took a job at Berkeley where reproducibility was considered an important axis. 
+> * Realized brain imaging research done was poorly reproducible, inefficient, and mistakes were ubiquitous.
+> * Many of us were playing the "publication and grant" game.
+> * Invested some times in neuroinformatics and took a job at Berkeley where reproducibility was considered an important axis
 
 ## The scale of the problem in Brain Imaging and what is the current culture
 
-> * NIH is investing about 400M$ each year in neuroimaging studies.
-> * Q: "Would the finding for which this paper is published be replicated on another dataset?" 
+> * NIH is investing ~400M$ each year in neuroimaging studies.
+> * "Would the finding for which this paper is published be replicated on another dataset?" 
 > * Difficult to assess, only a few relevant papers, tend to show little replication.
 > * 20 years of experience with researchers using neuroimaging as a tool:
     - PhDs / Postdoc / tenured researchers need papers and grants
@@ -26,7 +26,7 @@
     - Percentage of solid and replicable studies in brain mapping : [5%-25%]. 
 > * Percentage of re-usable data & analyses? Less than a few percents if not funded specifically for sharing. 
 
-## Why is the current culture very difficult to change?
+## Why is the publication-centered culture very difficult to change?
 
 > * Researchers need/want jobs, they optimize their behaviour to get jobs 
 > * Universities need money and they will optimize criteria to get grants 
@@ -34,17 +34,21 @@
 > * Conclusion: publication-centered culture, the only widely accepted "currency" in research
     - research has become a competitive game : be the quickest, collaborate only if you need
     - keep "your" data for yourself, or trade it for authorship 
-    - a culture of secrecy and sloppiness, no time to train yourself properly
+    - a culture of secrecy and sloppiness, no time to check things or train yourself properly
 > * A great deal of cynicism / disillusion in some communities
 
 # Part II: Who can do what? 
 
 ## Incentives and Punish by reward
 
-> * Most of us think we need to change the incentives, or "punish" bad behaviour
+> * Most of us think we need to change the incentives: the "rewards", or "punish" bad behaviour
 > * <div style="float:center" markdown="1">
   ![Punish by reward](./img/punish_by_reward_50pc.jpg)
     </div>
+
+<!-- 
+The pb with this way of thinking is that rewarding people for certain type of works will make the work less interesting and people less committed to it. Currently, we reward the work with the paper currency, and this tends to change our work to get more currency. We optimize numbers. 
+-->
 
 ## Do not change the incentives
 
@@ -52,15 +56,16 @@
 > * Because working for specific incentives is likely to be detrimental to the work
 > * Because evaluation cannot be reduced to a set of numbers: it takes time and competences. 
 > * Carrots and sticks seem to work very well for some pets, but do they for researchers?
-> * Remove incentives
+> * Remove incentives as far as possible
 
-## It is mostly the funding agencies' 
+## Mostly the funding agencies' call 
 
 > * Other "stakeholders" are stuck in local minima, or need to feed their kids
-> * They are the ones with the less constraints 
+> * Funding agencies have the less constraints 
 > * Consider all ethical aspects in clinical research: strong rational for sharing 
-> * Consider how much is re-used of what has been funded : make research less costly
+> * Consider how much is re-used of what has been funded: make research less costly / more efficient
 > * Consider funding infrastructures for sharing data, or for training
+> * Consider continuous funding of current infrastructures (how ?)
 
 ## Practical steps: 
 > * Grant review guidelines have a new section: significance, feasibility, ... *replicability+re-usability*, 
@@ -68,18 +73,18 @@
 > * Code and data are released with appropriate license and reviewed as deliverable (data paper?)
 > * Increase funding in development of tools for open-science (data-sharing, collaborative tools)
 
-## Universities call: Training on statistical and computational methods
+## Universities' call: Train on statistical and computational methods
 
 > * Train on open and collaborative science (eg git/github)
-> * Train life science scientists in depth programming skills  ("data science")
-> * Train life science scientists in depth in statistics ("data science")
+> * Train life science researchers in depth programming skills  ("data science")
+> * Train life science researchers in depth in statistics ("data science")
 
 ## Researcher's call: The research manifesto / "Hippocratic oath"
 
-> * I will make my research tools and data open and re-usable by others 
-> * I will invite to collaborate in the areas where I cannot do the best work
+> * I will make my research open and let tools and data be re-usable by others 
+> * I will foster collaboration in the areas where this would improve the work
 > * I will take the time to train myself in key areas 
-> * I will consider first how my actions are benefiting the progress of knowledge 
+> * I will consider how my actions are first benefiting the progress of knowledge 
 
 ## On the statistical / computational side of things 
 
@@ -98,6 +103,7 @@
 > * Work with journals and editors to accept well powered null findings, replication studies
 > * Foster a culture of re-usable science through new grants/publications calls and guidelines
 > * Foster the "replicate and advance" culture. 
+
 
 ## Acknowledgement 
 
