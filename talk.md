@@ -43,7 +43,7 @@
 
 > * Most of us think we need to change the incentives: the "rewards", or "punish" bad behaviour
 > * <div style="float:center" markdown="1">
-  ![Punish by reward](./img/punish_by_reward_50pc.jpg)
+  ![Punish by reward](./img/punish_by_reward_d1200s50.jpg)
     </div>
 
 <!-- 
@@ -56,7 +56,7 @@ The pb with this way of thinking is that rewarding people for certain type of wo
 > * Because working for specific incentives is likely to be detrimental to the work
 > * Because evaluation cannot be reduced to a set of numbers: it takes time and competences. 
 > * Carrots and sticks seem to work very well for some pets, but do they for researchers?
-> * Remove incentives as far as possible
+> * Conclusion: Remove incentives as far as possible
 
 ## Mostly the funding agencies' call 
 
