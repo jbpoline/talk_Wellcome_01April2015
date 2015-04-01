@@ -26,16 +26,16 @@
     - Percentage of solid and replicable studies in brain mapping : [5%-25%]. 
 > * Percentage of re-usable data & analyses? Less than a few percents if not funded specifically for sharing. 
 
-## Why is the publication-centered culture very difficult to change?
+## Why is the non reproducibility culture very difficult to change?
 
 > * Researchers need/want jobs, they optimize their behaviour to get jobs 
 > * Universities need money and they will optimize criteria to get grants 
-> * Administrations loves quantitative criteria: numbers are easier to manage
-> * Conclusion: publication-centered culture, the only widely accepted "currency" in research
-    - research has become a competitive game : be the quickest, collaborate only if you need
+> * Administrations love quantitative criteria
+> * Conclusion: publication-centered culture, the widely accepted "currency" 
+    - research has become a competitive game: be the quickest, beat competition 
     - keep "your" data for yourself, or trade it for authorship 
-    - a culture of secrecy and sloppiness, no time to check things or train yourself properly
-> * A great deal of cynicism / disillusion in some communities
+    - a culture of secrecy and sloppiness: no time to check things or train yourself properly
+> * A great deal of cynicism / disillusion in many senior researchers 
 
 # Part II: Who can do what? 
 
@@ -47,7 +47,7 @@
     </div>
 
 <!-- 
-The pb with this way of thinking is that rewarding people for certain type of works will make the work less interesting and people less committed to it. Currently, we reward the work with the paper currency, and this tends to change our work to get more currency. We optimize numbers. 
+I dont think that's the case. The pb with this way of thinking demonstrated by "punish by reward" is that rewarding people for certain type of works takes away the interest of the work itself and people less committed to it. Currently, we reward the work with the paper currency, and this tends to change the nature of our work to get more currency. We optimize numbers. 
 -->
 
 ## Do not change the incentives
@@ -99,7 +99,7 @@ The pb with this way of thinking is that rewarding people for certain type of wo
 ## Conclusion: What shall we do about it 
 
 > * Train the new generation of scientist in computation, statistics, open science
-> * multiply initiatives like OSF, many lab and community based projects, METRICS (Meta-Research) institutes
+> * Multiply initiatives like OSF, many lab and community based projects, METRICS (Meta-Research) institutes
 > * Work with journals and editors to accept well powered null findings, replication studies
 > * Foster a culture of re-usable science through new grants/publications calls and guidelines
 > * Foster the "replicate and advance" culture. 
